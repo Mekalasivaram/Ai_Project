@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeFindr - AI-Based Second-Hand Luxury Finder</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="#home">LuxeFindr</a>
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+      </ul>
+    </div>
+    <div class="burger-menu">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Welcome to LuxeFindr</h1>
+      <p>Your AI assistant for finding perfect second-hand luxury items</p>
+      <a href="#chat-section" class="cta-button">Start Your Hunt</a>
+    </div>
+    <div class="hero-image">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.DlT-XPPvjaS9SS9KS3lVYwHaEK&pid=Api&P=0&h=180" alt="LuxeFindr Illustration">
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section id="categories" class="services">
+    <h2 class="section-title">Luxury Categories</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-tshirt"></i></div>
+        <h3>Designer Fashion</h3>
+        <p>Premium second-hand clothing and accessories from top designers</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-gem"></i></div>
+        <h3>Jewelry & Watches</h3>
+        <p>Authentic pre-owned luxury timepieces and fine jewelry</p>
+      </div>
+      <div class="service-card">
+        <div class="card-icon"><i class="fas fa-couch"></i></div>
+        <h3>Luxury Home Goods</h3>
+        <p>High-end furniture, art, and decor for sophisticated interiors</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat Section -->
+  <section id="chat-section" class="chat-section">
+    <h2 class="section-title">Your Personal Luxury Assistant</h2>
+    <p class="section-description">Tell us what you're looking for, and our AI will help find the perfect piece</p>
+    <div class="chat-container">
+      <div class="chat-messages" id="chat-messages"></div>
+      
+      <div class="typing-indicator hidden" id="typing-indicator">
+        <span></span><span></span><span></span>
+      </div>
+      
+      <form id="chat-form" class="chat-input-form">
+        <input 
+          type="text" 
+          id="user-input" 
+          placeholder="Describe the luxury item you're looking for..." 
+          autocomplete="off"
+          required
+        >
+        <button type="submit">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <h2>Find Your Next Treasure</h2>
+    <p>LuxeFindr helps you discover authenticated second-hand luxury items at the best prices.</p>
+    <a href="#chat-section" class="cta-button">Start Chatting</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>LuxeFindr</h3>
+        <p>Your AI-powered luxury item finder</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#marketplace">Marketplace</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Important</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Authentication Process</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Important Notice</h3>
+        <p>LuxeFindr helps match you with luxury products but does not guarantee authenticity. All transactions are between buyers and sellers. We recommend professional authentication for high-value purchases.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LuxeFindr. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
